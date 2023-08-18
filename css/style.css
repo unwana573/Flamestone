@@ -1,0 +1,1126 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    font-family: sans-serif;
+}
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* .header { 
+    display: none; Hide content initially
+}*/
+
+.header {
+    /* background: rgb(3, 3, 20); */
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/pix/smart-agriculture-iot-with-hand-planting-tree-background_53876-124626.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: change infinite 20s ease-in;
+    color: aliceblue;
+    height: 100vh;
+}
+
+@keyframes change {
+    0% {
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/pix/sunny-meadow-landscape_1112-134.avif);
+    }
+    20% {
+        /* background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/pix/tractor-agricultural-machine-cultivating-field_342744-896.avif); */
+    }
+    30% {
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(/pix/detail-rice-plant-sunset-valencia-with-plantation-out-focus-rice-grains-plant-seed_181624-25838\ -\ Copy.avif);
+    }
+}
+
+.header label {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 5rem;
+    padding-left: 2%;
+}
+
+.overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+.overlay a:hover, .overlay a:focus {
+    color: black;
+}
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+span {
+    display: none;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+    color: orangered;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    /* display: none; */
+}
+
+.user {
+    display: flex;
+    margin-left: 90%;
+    margin-top: -5%;
+} 
+
+.user-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;   
+}
+
+.header ul {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-top: 10%;
+}
+
+.header h1 {
+    font-size: 4rem;
+}
+
+.header h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.header p {
+    justify-content: center;
+    text-align: center;
+    padding-top: 20%;
+}
+
+.table {
+    display: flex;
+    height: 100vh;
+    color: aliceblue;
+}
+
+.con {
+    background: rgb(3, 3, 20);
+    width: 30vw;
+}
+
+.con h1,
+p {
+    padding-left: 5%;
+}
+
+.con h1 {
+    font-size: 4rem;
+    padding-bottom: 95%;
+}
+
+.con p {
+    font-size: 1.5rem;
+}
+
+.for {
+    background: rgb(7, 5, 28);
+    width: 70vw;
+    font-size: x-large;
+}
+
+.for ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.first {
+    padding-bottom: 45%;
+    padding-top: 5%;
+    padding-left: 10%;
+}
+
+.last {
+    padding-left: 10%;
+}
+
+.for p {
+    padding-left: 25%;
+    padding-top: 5%;
+}
+
+.about {
+    height: 80vh;
+    background: rgb(3, 3, 20);
+    color: aliceblue;
+}
+
+.about ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.us {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    padding-left: 5%;
+}
+
+.us h1 {
+    font-size: 4rem;
+    padding-left: 2%;
+    padding-top: 3%;
+}
+
+.us h3 {
+    padding-left: 2%;
+}
+
+.us h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.us p {
+    padding-top: 16%;
+    font-size: 1.2rem;
+}
+
+
+.about img {
+    padding-left: 30%;
+    padding-top: 5%;
+    width: 50%;
+}
+
+.team {
+    height: 100vh;
+    background-color: rgb(3, 3, 20);
+    color: aliceblue;
+}
+
+.team ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 5%;
+    padding-top: 2%;
+}
+
+.team h1 {
+    font-size: 3.5rem;
+}
+
+.team hr {
+    width: 15%;
+    border-top: 2px solid rgb(244, 84, 26);
+    border-bottom: 2px solid rgb(244, 84, 26);
+    border-left: 2px solid rgb(244, 84, 26);
+    border-right: 2px solid rgb(244, 84, 26);
+    margin-left: 15%;
+}
+     
+.team p {
+    font-size: 1.5rem;
+    justify-content: right;
+    width: 70%;
+}
+
+.team img {
+    width: 20vw;
+    height: 70vh;
+}
+
+.team ol {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 3%;
+}
+
+.success {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background: rgb(1, 1, 34);
+    color: aliceblue;
+    height: 100vh;
+    padding-top: 2%;
+}
+
+.success ul {
+    display: flex;
+    flex-direction: column;
+    width: 70vh;
+    padding-left: 5%;
+}
+
+.success h1 {
+    font-size: 3rem;
+    padding-bottom: 5%;
+}
+
+.success hr {
+    width: 30%;
+    margin-left: 1%;
+    margin-bottom: 5%;
+    border-top: 2px solid rgb(244, 84, 26);
+    border-bottom: 2px solid rgb(244, 84, 26);
+    border-left: 2px solid rgb(244, 84, 26);
+    border-right: 2px solid rgb(244, 84, 26);
+}
+
+.success ul p {
+    width: 90%;
+    font-size: 1.7rem;
+    margin-left: -5%;
+    padding-bottom: 45%;
+}
+
+.success h3 {
+    font-size: 1.3rem;
+}
+
+.success ol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: -25%; 
+    align-items: center;
+    text-align: center;
+}
+
+.success i {
+    font-size: 4rem;
+    padding-top: 10%;
+}
+
+.success ol p {
+    font-size: 1.5rem; 
+}
+
+.success ol li {
+    background: rgb(3, 3, 20);
+    width: 50vh;
+    height: 40vh;
+}
+
+.serve {
+    background: rgb(3, 3, 20); 
+    height: 120vh;
+    color: aliceblue;
+}
+
+.serve ul {
+    display: grid;
+    grid-template-columns: repeat(2, 30% 60%); 
+    align-items: center;
+    text-align: center;
+    gap: 10%;
+    padding-left: 15%;
+}
+
+.serve ul h1 {
+    font-size: 3rem;
+}
+
+.serve ul p {
+    text-align: left;
+    font-size: 1.5rem;
+    padding-top: 6%;
+}
+
+.serve ol {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 5%;
+}
+
+.serve img {
+    width: 50vh;
+    height: 70vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.serve h3 {
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+
+.serve hr {
+    width: 20%;
+    margin-bottom: 3%;
+    border-top: 2px solid rgb(244, 84, 26);
+    border-bottom: 2px solid rgb(244, 84, 26);
+    border-left: 2px solid rgb(244, 84, 26);
+    border-right: 2px solid rgb(244, 84, 26);
+}
+
+.serve p {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-left: -5%;
+    margin-bottom: 5%;
+}
+
+.mission {
+    background-color: rgb(1, 1, 23);
+    color: aliceblue;
+    height: 100vh;
+}
+
+.mission ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2%;
+}
+
+.mission img {
+    width: 90%;
+    height: 70vh;
+}
+
+.mission h1 {
+    font-size: 3rem;
+}
+
+.mission p {
+    margin-left: -5%;
+    font-size: 1.7rem;
+    font-weight: 1;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+
+.mission .p {
+    color: rgb(244, 84, 26);
+    font-size: 2rem;
+    padding-top: 10%;
+    padding-bottom: 5%;
+}
+
+.mission hr {
+    width: 70%;
+    margin-bottom: 35%;
+}
+
+.mission i {
+    font-size: 4rem;
+    padding-top: 5%;
+}
+
+.mission ol {
+    display: flex;
+    gap: 5%;
+}
+
+.mission h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.case {
+    background: rgb(0, 0, 26);
+    color: aliceblue;
+    height: 100vh;
+    padding-top: 2%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr 2fr);
+}
+
+.case ol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-left: 5%;
+    /* gap: 2%; */
+}
+
+.case ol img {
+    width: 27vw;
+    height: 60vh;
+}
+     
+.case img {
+    width: 35vw;
+    height: 45vh;
+    padding-left: 5%;
+}
+
+.li {
+    display: flex;
+    margin-top: -15%;
+}
+
+.li h1 {
+    font-size: 4rem;
+}
+
+.li hr {
+    height: 60%;
+    border-left: 2px solid rgb(244, 84, 26);
+    border-right: 2px solid rgb(244, 84, 26);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.li p {
+    font-size: xx-large;
+    width: 50%;
+}
+
+.media {
+    background-color: rgb(1, 1, 23);
+    color: aliceblue;
+    height: 100vh;
+    padding-top: 5%;
+}
+
+.media ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.media ul h1 {
+    font-size: 4rem;
+    padding-bottom: 5%;
+    padding-left: 5%;
+}
+
+.media ul p {
+    font-weight: lighter;
+    font-size: 1.3rem;
+    padding-bottom: 15%;
+}
+
+.media ul h3 {
+    font-weight: lighter;
+    font-size: 1.7rem;
+    padding-left: 5%;
+}
+
+.media ul button {
+    margin-top: 5%;
+    margin-left: 15%;
+    width: 15vw;
+    height: 10vh;
+    color: rgb(244, 84, 26);
+    border: 2px solid orangered;
+    background: transparent;
+    border-radius: 60px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.media ol {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.media ol h2 {
+    font-size: 3rem;
+    font-weight: lighter;
+    /* padding-bottom: -25%; */
+}
+
+.media ol p {
+    font-size: 1.5rem;
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+    header {
+        width: 100%;
+    }
+    .header h3 {
+        margin-bottom: -45px;
+    }
+    .header h1 {
+        font-size: 3rem;
+    }
+    .user {
+        margin-top: -10%;
+    }
+    .table {
+        display: block;
+    }
+    .con {
+        width: 100vw;
+        height: 35vh;
+    }
+    .con h1 {
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 100rem;
+    }
+    .for {
+        /* padding-bottom: 15%; */
+        width: 100vw;
+        height: 100vh;
+    }
+    .for ul h1 {
+        font-size: 2.2rem;
+    }
+    .for ul p {
+        font-size: 1.4rem;
+    }
+    .first {
+        padding-bottom: 5%;
+    }
+    .last {
+        background: rgb(7, 5, 28);
+        height: 50vh;
+    }
+    .us h1 {
+        padding-top: 50%;
+    }
+    .us h3 {
+        font-size: 1.5rem;
+    }
+    .us p {
+        width: 50vw;
+    }
+    .none {
+        display: none;
+    }
+    .about {
+        height: 100vh;
+    }
+    .about ul {
+        display: grid;
+    }
+    .about img {
+        padding-top: 50%;
+        padding-left: -60%;
+        height: 100vh;
+        width: 25vw;
+    }
+    .team {
+        background-color: rgb(3, 3, 20);
+        height: 1000px;
+    }
+    .team ul {
+        padding-top: 50%;
+    }
+    .team ol h3 {
+        font-weight: 500;
+        font-size: 1rem;
+    }
+    .success h1 {
+        font-size: 2rem;
+    }
+    .success ul p {
+        font-size: 1.2rem;
+    }
+    .success i {
+        font-size: 2rem;
+    }
+    .success ol p {
+        font-size: 1.2rem;
+    }
+    .serve {
+        height: 600px;
+    }
+    .serve ul h1 {
+        font-size: 2.5em;
+    }
+    .serve ul p {
+        font-size: 1.2rem;
+    }
+    .mission {
+        height: 500px;
+    }
+    .mission h1 {
+        font-size: 2rem;
+    }
+    .mission .p {
+        font-size: 1.3rem;
+    }
+    .mission i {
+        font-size: 2rem;
+    }
+    .mission h3 {
+        font-size: 1.3rem;
+    }
+    .mission p {
+        font-size: 1.3rem;
+    }
+    .li h1 {
+        font-size: 2rem;
+    }
+    .li p {
+        font-size: 1.3rem;
+    }
+    .img {
+        margin-left: -1%;
+    }
+    .media {
+        height: 250vh;
+    }
+    .media ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .media img {
+        width: 40vw;
+    }
+    .media ul h1 {
+        font-size: 2.5rem;
+    }
+    .media ul h3 {
+        font-size: 1.5rem;
+    }
+    .media ul button {
+        width: 30vw;
+        height: 15vh;
+    } 
+    .media ol h2 {
+        font-size: 2rem;
+        padding-left: 5%;
+    }
+    .media ol h3 {
+        font-size: 1.2rem;
+    }
+    .media ol p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+    .header {
+        width: 100vw;
+    }
+    .team {
+        height: 150vh;
+    } 
+    .about {
+        height: 100vh;
+    }
+    .success {
+        height: 200vh;
+    }
+    .success ul p {
+        width: 40vw;
+    }    
+    .success ul h1 {
+        width: 20vw;
+    }
+    .success ul {
+        margin-left: -4%;
+        width: 20vw;
+    }
+    .success ol {
+        display: block;
+        padding-left: 30%;
+    }
+    .success ol li {
+        margin-top: 5%;
+    }
+    .serve {
+        height: 200vh;
+    }
+    .serve img {
+        width: 45vw;
+    }
+    .serve ol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .mission {
+        height: 100vh;
+    }
+    .dig {
+        margin-left: -15%;
+    }
+    .media {
+        height: 130vh;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 600px) {
+    header {
+        width: 100vw;
+    }
+    .header label {
+        font-size: 4rem
+    }
+    .user {
+        margin-top: -10%;
+    }
+    .header h1 {
+        font-size: 3rem;
+        margin-top: 5%;
+    }
+    .header h3 {
+        font-size: 2rem;
+    }
+    .header p {
+        margin-top: -5%;
+    }
+    .table {
+        display: block;
+    }
+    .con {
+        width: 100vw;
+        height: 20vh;
+    }
+    .con h1 {
+        text-align: center;
+        font-size: 2.5rem; 
+        padding-top: 5%;
+    }
+    .none {
+        display: none;
+    }
+    .for { 
+        width: 100vw;
+        height: 200vh;
+    }
+    .for ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding-left: 10%;
+    }
+    .for ul h1 {
+        font-size: 2rem;
+    }
+    .for ul p {
+        font-size: 1.3rem;
+        margin-left: -55px;
+    }
+    .first {
+        padding-bottom: 5%;
+    }
+    .last {
+        background: rgb(7, 5, 28);
+        height:35vh;
+    }
+    .us h1 {
+        padding-top: 80%;
+        font-size: 3rem;
+    }
+    .us h3 {
+        font-size: 1.5rem;
+    }
+    .us p {
+        /* width: 50vw; */
+        font-size: 1.3rem;  
+        margin-top: -13%;
+        margin-left: -3%; 
+    } 
+    .about {
+        height: 225vh;
+    }
+    .about ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .about img {
+        margin-left: -15%;
+        height: 100vh;
+        width: 50vw;
+    }
+    .team {
+        height: 200vh;
+    }
+    .team ul {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team h1 {
+        font-size: 3rem;
+    }
+    .team p {
+        font-size: 1.3rem;
+    }
+    .team hr {
+        margin-left: 5%;
+    }
+    .team ol {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .team img {
+        width: 80%;
+    }
+    .team ol h3 {
+        font-size: 1rem;
+    }
+    .success {
+        display: block;
+        height: 220vh;
+    }
+    .success ul {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .success hr {
+        margin-left: 30%;
+    }
+    .success ul p {
+        font-size: 1.7rem;
+        padding-bottom: 5%;
+    }
+    .success i {
+        font-size: 2rem;
+    }
+    .success ol {
+        margin-left: 15%;
+        display: block;
+    }
+    .success ol li {
+        margin-top: 5%;
+        margin-left: 35%;
+        width: 50vh;
+    }
+    .success ol p {
+        font-size: 1.2rem;
+    }
+    .serve {
+        height: 305vh;
+    }
+    .serve ul {
+        display: block;
+    }
+    .serve ul h1 {
+        margin-left: -25%;
+    }
+    .serve ul p {
+        font-size: 1.3rem;
+    }
+    .serve ol {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .mission {
+        height: 250vh;
+    }
+    .mission ul {
+        display: block;
+    }
+    .fas {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 5%;
+    }
+    .fas hr {
+        margin-left: 15%;
+        margin-bottom: 10%;
+    }
+    .mission ol {
+        padding-left: 15%;
+    }
+    .twin {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-top: 5%;
+    }
+    .mission h3 {
+        font-weight: bold;
+    }
+    .mission p {
+        padding-top: 2%;
+    }
+    .li h1 {
+        font-size: 2rem;
+    }
+    .li p {
+        font-size: 1.3rem;
+    }
+    .dig {
+        margin-left: -65%;
+    }
+    .media {
+        height: 230vh;
+    }
+    .media ul {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+    }
+    .media ul h1 {
+        font-size: 3rem;
+    }
+    .media ul p {
+        padding-bottom: 5%;
+    }
+    .media ul button {
+        width: 40vw;
+        margin-bottom: 5%;
+    } 
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+    .user {
+        margin-top: -15%;
+        margin-left: 85%;
+    }
+    .about {
+        height: 200vh;
+    } 
+    .success {
+        height: 220vh;
+    }
+    .success ul {
+        padding-left: 5%;
+        width: 100vw;
+    }
+    .success ol {
+        display: block;
+        margin-left: 5%;
+    }
+    .success ol li {
+        width: 80vw;
+    }
+    .case img {
+        padding-left: 1%;
+    }
+    .serve {
+        height: 290vh;
+    }
+    .serve ul p {
+        margin-left: -17%;
+        width: 23rem;
+    }
+    .serve img {
+        width: 80vw;
+    }
+    .serve p {
+        margin-left: -5%;
+        width: 100vw;
+    }
+    .serve ol {
+        display: block;
+    }
+    .mission {
+        height: 250vh;
+    }
+    .dig {
+        margin-left: -15%;
+    }
+    .li {
+        display: block;
+    }
+    .li hr {
+        margin-left: 3%;
+        margin-right: 2%;
+        height: 0;
+        border-top: 2px solid rgb(244, 84, 26);
+        border-bottom: 2px solid rgb(244, 84, 26);
+    }
+    /* .li h1{
+        /* padding-left: 1%; */
+        /* width: 50vw; 
+    } */
+    .media {
+        height: 200vh;
+    }
+    .media img {
+        width: 70vw;
+    }
+    .media ol h2 {
+        font-size: 3rem;
+    }
+    .media ol h3 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .dig {
+        margin-left: -45%;
+    }
+    
+}
+
+@media (max-width: 1025px) {
+    .serve img {
+        width: 30vw;
+    }
+    .success ul p {
+        /* margin-left: -17%; */
+        width: 15rem;
+    }
+    .success ol {
+        margin-left: -35%;
+    }
+    .success ol li {
+        width: 35vh;
+    }
+    .serve ol {
+        margin-left: -3%;
+    }
+    .dig {
+        margin-left: -40%;
+    }
+}
